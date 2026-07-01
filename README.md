@@ -1,10 +1,26 @@
 # React Candlesticks Next.js Example
 
-This example shows how to use `react-candlesticks` in a Next.js App Router project.
+An interactive candlestick chart built with
+[`react-candlesticks`](https://www.npmjs.com/package/react-candlesticks),
+Next.js, React, and TypeScript.
 
-The page stays server-rendered, while the interactive chart is loaded from a client component with `next/dynamic` and `ssr: false`.
+The demo includes:
+
+- Candlestick price data
+- SMA 20 and SMA 50 overlays
+- A synchronized volume panel
+- A Stochastic oscillator panel
+- Light and dark themes
+- A client-loaded chart component for Next.js
 
 ```bash
 npm install
 npm run dev
 ```
+
+## Links
+
+- [react-candlesticks on npm](https://www.npmjs.com/package/react-candlesticks)
+- [Documentation](https://docs.reactcandlesticks.com/docs/)
+- [Library source](https://github.com/trendingcandles/react-candlesticks)
+- [Project website](https://reactcandlesticks.com/)
