@@ -104,14 +104,27 @@ h1 {
   margin-bottom: 14px;
 }
 
+.chart-quote {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: baseline;
+}
+
 .chart-symbol {
-  margin-right: 12px;
   color: #ffffff;
   font-size: 22px;
   font-weight: 800;
 }
 
-.chart-card--light .chart-symbol {
+.chart-price {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.chart-card--light .chart-symbol,
+.chart-card--light .chart-price {
   color: #172033;
 }
 

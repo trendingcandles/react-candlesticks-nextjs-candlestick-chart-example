@@ -26,8 +26,9 @@ export default function CandlestickChart() {
   return (
     <div className={`chart-card chart-card--${theme}`}>
       <div className="chart-toolbar">
-        <div>
+        <div className="chart-quote">
           <span className="chart-symbol">TSLA</span>
+          <span className="chart-price">{latest.close.toFixed(2)}</span>
           <span className={change >= 0 ? 'change change--up' : 'change change--down'}>
             {change >= 0 ? '+' : ''}
             {change.toFixed(2)} ({changePercent.toFixed(2)}%)
@@ -77,7 +78,9 @@ export default function CandlestickChart() {
         >
           <Panel heightRatio={3}>
             <Candlesticks />
-            {showIndicators ? <SMA period={20} series={{ value: { color: '#777' }}}/> : null}
+            {showIndicators ? (
+              <SMA period={20} series={{ value: { color: '#777' } }} />
+            ) : null}
             {showIndicators ? <SMA period={50} /> : null}
           </Panel>
           {showVolume ? (
