@@ -18,6 +18,10 @@ npm install
 npm run dev
 ```
 
+If you run the example in StackBlitz, use the repository as-is. It pins
+Next.js 15 so `npx next dev` does not start the Next.js 16 Turbopack dev
+server, which is not supported in StackBlitz WebContainers.
+
 ## Links
 
 - [react-candlesticks on npm](https://www.npmjs.com/package/react-candlesticks)
