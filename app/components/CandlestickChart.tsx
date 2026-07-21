@@ -74,6 +74,7 @@ export default function CandlestickChart() {
           data={exampleData}
           granularity="d1"
           initialScrollToLatest
+          scaleSmoothing
           theme={theme}
         >
           <Panel heightRatio={3}>
